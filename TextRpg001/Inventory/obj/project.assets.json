@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Assort++\\csharp\\TextRpg001\\Inventory\\Inventory.csproj",
+      "projectUniqueName": "E:\\Portfolio\\CSharp-Text_RPG\\TextRpg001\\Inventory\\Inventory.csproj",
       "projectName": "Inventory",
-      "projectPath": "E:\\Assort++\\csharp\\TextRpg001\\Inventory\\Inventory.csproj",
+      "projectPath": "E:\\Portfolio\\CSharp-Text_RPG\\TextRpg001\\Inventory\\Inventory.csproj",
       "packagesPath": "C:\\Users\\김진영\\.nuget\\packages\\",
-      "outputPath": "E:\\Assort++\\csharp\\TextRpg001\\Inventory\\obj\\",
+      "outputPath": "E:\\Portfolio\\CSharp-Text_RPG\\TextRpg001\\Inventory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\김진영\\AppData\\Roaming\\NuGet\\NuGet.Config",

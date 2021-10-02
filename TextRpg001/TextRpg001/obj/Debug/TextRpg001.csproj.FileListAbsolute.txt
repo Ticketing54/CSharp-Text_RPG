@@ -5,3 +5,10 @@ E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.csprojAssemblyRefe
 E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.csproj.CoreCompileInputs.cache
 E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.exe
 E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.pdb
+E:\Portfolio\CSharp-Text_RPG\TextRpg001\TextRpg001\obj\Debug\TextRpg001.csprojAssemblyReference.cache
+E:\Portfolio\CSharp-Text_RPG\TextRpg001\TextRpg001\obj\Debug\TextRpg001.csproj.CoreCompileInputs.cache
+E:\Portfolio\CSharp-Text_RPG\TextRpg001\TextRpg001\obj\Debug\TextRpg001.exe
+E:\Portfolio\CSharp-Text_RPG\TextRpg001\TextRpg001\obj\Debug\TextRpg001.pdb
+E:\Portfolio\CSharp-Text_RPG\TextRpg001\TextRpg001\bin\Debug\TextRpg001.exe.config
+E:\Portfolio\CSharp-Text_RPG\TextRpg001\TextRpg001\bin\Debug\TextRpg001.exe
+E:\Portfolio\CSharp-Text_RPG\TextRpg001\TextRpg001\bin\Debug\TextRpg001.pdb

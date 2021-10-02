@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bcp05WqC1xr4yKNi4DSF+Rr3g/hPiLSLVUvoOcmxhcM+8E3yoOL5NReZsgaAb3NQWFQjiSTGBLuxA7lpzyhCEQ==",
+  "dgSpecHash": "O0GOh4REEpq9KSXJNmEmNbN+uVO04aRAFpe72++65pyHQ7J/X1N9EwmexPEqp1qVU8L5DyqjxPdlsft1UH2bLg==",
   "success": true,
-  "projectFilePath": "E:\\Assort++\\csharp\\TextRpg001\\Inventory\\Inventory.csproj",
+  "projectFilePath": "E:\\Portfolio\\CSharp-Text_RPG\\TextRpg001\\Inventory\\Inventory.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
