@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextRpg001", "TextRpg001\TextRpg001.csproj", "{7866C820-FF73-41CB-8791-A4D2F2D885B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory", "Inventory\Inventory.csproj", "{BA5959F5-340B-4592-841D-2039474AF4E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory", "Inventory\Inventory.csproj", "{BA5959F5-340B-4592-841D-2039474AF4E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris\Tetris.csproj", "{E35C1E41-CC9C-423D-B280-EF2A8B5B3033}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BA5959F5-340B-4592-841D-2039474AF4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA5959F5-340B-4592-841D-2039474AF4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA5959F5-340B-4592-841D-2039474AF4E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E35C1E41-CC9C-423D-B280-EF2A8B5B3033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35C1E41-CC9C-423D-B280-EF2A8B5B3033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35C1E41-CC9C-423D-B280-EF2A8B5B3033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35C1E41-CC9C-423D-B280-EF2A8B5B3033}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
