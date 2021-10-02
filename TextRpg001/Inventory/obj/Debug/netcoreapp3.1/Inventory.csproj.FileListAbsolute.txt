@@ -1,0 +1,13 @@
+E:\Assort++\csharp\TextRpg001\Inventory\bin\Debug\netcoreapp3.1\Inventory.exe
+E:\Assort++\csharp\TextRpg001\Inventory\bin\Debug\netcoreapp3.1\Inventory.deps.json
+E:\Assort++\csharp\TextRpg001\Inventory\bin\Debug\netcoreapp3.1\Inventory.runtimeconfig.json
+E:\Assort++\csharp\TextRpg001\Inventory\bin\Debug\netcoreapp3.1\Inventory.runtimeconfig.dev.json
+E:\Assort++\csharp\TextRpg001\Inventory\bin\Debug\netcoreapp3.1\Inventory.dll
+E:\Assort++\csharp\TextRpg001\Inventory\bin\Debug\netcoreapp3.1\Inventory.pdb
+E:\Assort++\csharp\TextRpg001\Inventory\obj\Debug\netcoreapp3.1\Inventory.csprojAssemblyReference.cache
+E:\Assort++\csharp\TextRpg001\Inventory\obj\Debug\netcoreapp3.1\Inventory.AssemblyInfoInputs.cache
+E:\Assort++\csharp\TextRpg001\Inventory\obj\Debug\netcoreapp3.1\Inventory.AssemblyInfo.cs
+E:\Assort++\csharp\TextRpg001\Inventory\obj\Debug\netcoreapp3.1\Inventory.csproj.CoreCompileInputs.cache
+E:\Assort++\csharp\TextRpg001\Inventory\obj\Debug\netcoreapp3.1\Inventory.dll
+E:\Assort++\csharp\TextRpg001\Inventory\obj\Debug\netcoreapp3.1\Inventory.pdb
+E:\Assort++\csharp\TextRpg001\Inventory\obj\Debug\netcoreapp3.1\Inventory.genruntimeconfig.cache

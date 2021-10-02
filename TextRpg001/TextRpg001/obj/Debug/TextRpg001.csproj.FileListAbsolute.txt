@@ -1,0 +1,7 @@
+E:\Assort++\csharp\TextRpg001\TextRpg001\bin\Debug\TextRpg001.exe.config
+E:\Assort++\csharp\TextRpg001\TextRpg001\bin\Debug\TextRpg001.exe
+E:\Assort++\csharp\TextRpg001\TextRpg001\bin\Debug\TextRpg001.pdb
+E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.csprojAssemblyReference.cache
+E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.csproj.CoreCompileInputs.cache
+E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.exe
+E:\Assort++\csharp\TextRpg001\TextRpg001\obj\Debug\TextRpg001.pdb
