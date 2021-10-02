@@ -31,8 +31,7 @@ namespace TextRpg001
             Console.WriteLine($"공격력 : {AT} + ({Weapon})");
             Console.WriteLine($"체력 : {HP} / {MAXHP}");
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("---------------------------------------");
-            Console.WriteLine("---------------------------------------");
+           
         }
         public override int ReturnAT()
         {
