@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Tetris
 {
-    
+    enum BLOCKDIR
+    {
+        BD_T,
+        BD_R,
+        BD_B,
+        BD_L,
+        BD_MAX
+
+    }
 
     enum BLOCKTYPE
     {
@@ -16,22 +24,29 @@ namespace Tetris
         BT_Z,   // 오른쪽 삐뚤이
         BT_S,   // 왼쪽 삐뚤이
         BT_T,   // T모양
-        BT_O    // 네모
+        BT_O,    // 네모
+        BT_MAX
+            
     }
-    class Block
+    partial class Block
     {
-        int X = 0, Y = 0;        
-        List<List<string>> BlockData = new List<List<string>>();
+        int X = 0, Y = 0;
+        BLOCKDIR Dir = BLOCKDIR.BD_T;
+        string[][] Arr = null;
+        //List<List<string>> BlockData = new List<List<string>>();
         TETRISSCREEN Screen = null;
         public Block(TETRISSCREEN _Screen)
         {
             Screen = _Screen;
-            for (int y = 0; y < 4; y++)
-            {
-                BlockData.Add(new List<string>());
-            }
-            
+            DataInit();
 
+            SettingBlock(BLOCKTYPE.BT_T, BLOCKDIR.BD_T);
+            
+        }
+
+        private void SettingBlock(BLOCKTYPE _TYPE, BLOCKDIR _Dir)
+        {
+            Arr = AllBlock[(int)_TYPE][(int)_Dir];
         }
         private void InPut()
         {
@@ -55,8 +70,18 @@ namespace Tetris
         }
         public void Move()
         {
-            InPut();           
-            Screen.SetBlock(Y, X, "■");
+            InPut();                       
+            for (int y = 0; y < 4; y++)
+            {
+                for (int x = 0; x < 4; x++)
+                {
+                    if (Arr[y][x] == "□")
+                    {
+                        continue;
+                    }
+                    Screen.SetBlock(Y+y, X+x, Arr[y][x]);
+                }
+            }
         }    
         
        
