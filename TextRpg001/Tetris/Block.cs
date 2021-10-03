@@ -28,6 +28,7 @@ namespace Tetris
         BT_MAX
             
     }
+   
     partial class Block
     {
         int X = 0, Y = 0;
@@ -43,7 +44,14 @@ namespace Tetris
             SettingBlock(BLOCKTYPE.BT_T, BLOCKDIR.BD_T);
             
         }
-
+        private BLOCKDIR RotateDir(BLOCKDIR _main)
+        {
+            _main++;
+            BLOCKDIR nextDir = _main;
+            if (nextDir == BLOCKDIR.BD_MAX)
+                return BLOCKDIR.BD_T;
+            return nextDir;
+        }
         private void SettingBlock(BLOCKTYPE _TYPE, BLOCKDIR _Dir)
         {
             Arr = AllBlock[(int)_TYPE][(int)_Dir];
@@ -63,6 +71,10 @@ namespace Tetris
                 case ConsoleKey.S:
                     Y += 1;
                     break;
+                case ConsoleKey.Spacebar:
+                    Dir = RotateDir(Dir);
+                    SettingBlock(BLOCKTYPE.BT_T, Dir);
+                    break;
                 default:
                     break;
             }
@@ -78,7 +90,7 @@ namespace Tetris
                     if (Arr[y][x] == "□")
                     {
                         continue;
-                    }
+                    }                    
                     Screen.SetBlock(Y+y, X+x, Arr[y][x]);
                 }
             }
