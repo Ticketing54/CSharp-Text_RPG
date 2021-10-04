@@ -88,29 +88,29 @@ namespace Tetris
             {
                 new string[]{ "□", "■", "□", "□" },
                 new string[]{ "□", "■", "□", "□" },
-                new string[]{ "□", "■", "□", "□" },
                 new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_J][(int)BLOCKDIR.BD_R] = new string[][]
             {
+                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "■", "■", "■" },
                 new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
-                new string[]{ "■", "□", "□", "□" },
-                new string[]{ "■", "■", "■", "■" },
             };
             AllBlock[(int)BLOCKTYPE.BT_J][(int)BLOCKDIR.BD_B] = new string[][]
             {
                 new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "■", "□", "□" },
                 new string[]{ "□", "■", "□", "□" },
-                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_J][(int)BLOCKDIR.BD_L] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
-                new string[]{ "□", "□", "□", "□" },
-                new string[]{ "■", "■", "■", "■" },
+                new string[]{ "□", "■", "■", "■" },
                 new string[]{ "□", "□", "□", "■" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             #endregion
             #region L
@@ -118,119 +118,119 @@ namespace Tetris
             {
                 new string[]{ "□", "■", "□", "□" },
                 new string[]{ "□", "■", "□", "□" },
-                new string[]{ "□", "■", "□", "□" },
                 new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_L][(int)BLOCKDIR.BD_R] = new string[][]
             {
+                new string[]{ "□", "■", "■", "■" },
+                new string[]{ "□", "■", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
-                new string[]{ "■", "■", "■", "■" },
-                new string[]{ "■", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_L][(int)BLOCKDIR.BD_B] = new string[][]
             {
-                new string[]{ "■", "■", "□", "□" },
-                new string[]{ "□", "■", "□", "□" },
-                new string[]{ "□", "■", "□", "□" },
-                new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "□", "■", "□" },
+                new string[]{ "□", "□", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_L][(int)BLOCKDIR.BD_L] = new string[][]
             {
+                new string[]{ "□", "□", "■", "□" },
+                new string[]{ "■", "■", "■", "□" },
                 new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
-                new string[]{ "□", "□", "□", "■" },
-                new string[]{ "■", "■", "■", "■" },
             };
             #endregion
             #region O
             AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCKDIR.BD_T] = new string[][]
             {
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCKDIR.BD_R] = new string[][]
             {
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCKDIR.BD_B] = new string[][]
             {
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_O][(int)BLOCKDIR.BD_L] = new string[][]
             {
+                new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
-                new string[]{ "■", "■", "□", "□" },
             };
             #endregion
             #region Z
             AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCKDIR.BD_T] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "■", "■", "□", "□" },
                 new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCKDIR.BD_R] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "■", "□" },
                 new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCKDIR.BD_B] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "■", "■", "□", "□" },
                 new string[]{ "□", "■", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_Z][(int)BLOCKDIR.BD_L] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "□", "■", "□" },
                 new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             #endregion
             #region S
             AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCKDIR.BD_T] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "■", "■", "□" },
                 new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCKDIR.BD_R] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "■", "□", "□" },
                 new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "□", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCKDIR.BD_B] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "■", "■", "□" },
                 new string[]{ "■", "■", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             AllBlock[(int)BLOCKTYPE.BT_S][(int)BLOCKDIR.BD_L] = new string[][]
             {
-                new string[]{ "□", "□", "□", "□" },
                 new string[]{ "□", "■", "□", "□" },
                 new string[]{ "□", "■", "■", "□" },
                 new string[]{ "□", "□", "■", "□" },
+                new string[]{ "□", "□", "□", "□" },
             };
             #endregion
              

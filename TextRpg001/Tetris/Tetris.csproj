@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACCSCREEN.cs" />
     <Compile Include="Block.cs" />
     <Compile Include="BlockData.cs" />
     <Compile Include="Program.cs" />

@@ -8,12 +8,42 @@ namespace Tetris
 {
     class TETRISSCREEN
     {
-        List<List<string>> BlockList = new List<List<string>>();
+        protected List<List<string>> BlockList = new List<List<string>>();
+        public TETRISSCREEN(int _X, int _Y, bool TopAndBotton)
+        {
+            for (int y = 0; y < _Y; y++)
+            {
+                BlockList.Add(new List<string>());
+                for (int x = 0; x < _X; x++)
+                {
+                    BlockList[y].Add("□");
+                }
+            }
+
+            if (TopAndBotton == false)
+                return;
+
+            for (int i = 0; i < BlockList[0].Count; i++)
+            {
+                BlockList[0][i] = "▣";
+            }
+            for (int i = 0; i < BlockList[BlockList.Count - 1].Count; i++)
+            {
+                BlockList[BlockList.Count - 1][i] = "▣";
+            }
+        }
+        
+        public int X { get { return BlockList[0].Count; } }
+        public int Y { get { return BlockList.Count; } }
         public void SetBlock(int _y, int _x, string _Type)
         {
             BlockList[_y][_x] = _Type;
         }
-        public void Render()
+        public bool IsBlock(int _y, int _x, string _Type)
+        {
+            return BlockList[_y][_x] == _Type;
+        }
+        public virtual void Render()
         {
             for (int y = 0; y < BlockList.Count; y++)
             {
@@ -40,25 +70,7 @@ namespace Tetris
                 }
             }
         }
-        public TETRISSCREEN(int _X, int _Y)
-        {
-            for (int y = 0; y < _Y; y++)
-            {
-                BlockList.Add(new List<string>());
-                for (int x = 0; x < _X; x++)
-                {
-                    BlockList[y].Add("□");
-                }
-            }
-            for (int i = 0; i < BlockList[0].Count; i++)
-            {
-                BlockList[0][i] = "▣";
-            }
-            for (int i = 0; i < BlockList[BlockList.Count - 1].Count; i++)
-            {
-                BlockList[BlockList.Count - 1][i] = "▣";
-            }
-        }
+        
     }
 
 }

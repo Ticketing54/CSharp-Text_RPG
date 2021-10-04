@@ -37,28 +37,79 @@ namespace Tetris
         string[][] Arr = null;
         //List<List<string>> BlockData = new List<List<string>>();
         TETRISSCREEN Screen = null;
-        public Block(TETRISSCREEN _Screen)
+        ACCSCREEN AccScreen = null;
+        Random NewRandom = new Random();
+        public Block(TETRISSCREEN _Screen, ACCSCREEN _AccScreen)
         {
+            if (_Screen == null || _AccScreen == null)
+                return;
             Screen = _Screen;
-            DataInit();
-
-            SettingBlock(BLOCKTYPE.BT_T, BLOCKDIR.BD_T);
+            AccScreen = _AccScreen;
+            DataInit();            
+            Reset();
             
-        }
-        private BLOCKDIR RotateDir(BLOCKDIR _main)
-        {
-            
-            BLOCKDIR nextDir = ++_main;
-            if (nextDir == BLOCKDIR.BD_MAX)
-                return BLOCKDIR.BD_T;
-            return nextDir;
-        }
+        }        
         private void SettingBlock(BLOCKTYPE _TYPE, BLOCKDIR _Dir)
         {
             Arr = AllBlock[(int)_TYPE][(int)_Dir];
         }
+        public  void RandomBlockType()
+        {
+            int Type = NewRandom.Next((int)BLOCKTYPE.BT_I, (int)BLOCKTYPE.BT_MAX);
+            //int Type = (int)BLOCKTYPE.BT_I;
+            CurType = (BLOCKTYPE)Type;
+        }
+        public void Reset()
+        {
+            RandomBlockType();
+            X = 0;
+            Y = 1;
+            SettingBlock(CurType, CurDir);
+        }
+        public bool DownCheck()
+        {
+            for (int y = 0; y < 4; y++)
+            {
+                for (int x = 0; x < 4; x++)
+                {
+                    if (Arr[y][x] == "■")
+                    {
+                        if(AccScreen.Y == Y + y || AccScreen.IsBlock(y+Y,x+X, "■"))
+                        {
+                            SetAccScreen();                            
+                            Reset();
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+        public void SetAccScreen()
+        {
+            for (int y = 0; y < 4; y++)
+            {
+                for (int x = 0; x < 4; x++)
+                {
+                    if (Arr[y][x] == "■")
+                    {
+                        AccScreen.SetBlock(y + Y-1, x + X, Arr[y][x]);
+                        
+                    }
+                }
+            }
+        }
+        public void Down()
+        {            
+            if (DownCheck())
+            {
+                return;
+            }
+            Y += 1;
+        }
         private void InPut()
         {
+            //Y += 1;
             if (!Console.KeyAvailable)
                 return;            
             switch (Console.ReadKey().Key)
@@ -70,18 +121,21 @@ namespace Tetris
                     X += 1;
                     break;
                 case ConsoleKey.S:
-                    Y += 1;
+                    Down();
                     break;
                 case ConsoleKey.Q:
-                    //왼쪽
+                    --CurDir;
+                    if (0 > CurDir)
+                        CurDir = BLOCKDIR.BD_L;
+                    SettingBlock(CurType, CurDir);
                     break;
                 case ConsoleKey.E:
-                    //오른쪽
-                    break;
-                case ConsoleKey.Spacebar:
-                    Dir = RotateDir(Dir);
-                    SettingBlock(BLOCKTYPE.BT_T, Dir);
-                    break;
+                    ++CurDir;
+                    if (BLOCKDIR.BD_MAX == CurDir)
+                        CurDir = BLOCKDIR.BD_T;
+                    SettingBlock(CurType, CurDir);
+                    break;       
+                    
                 default:
                     break;
             }
