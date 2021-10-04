@@ -32,7 +32,8 @@ namespace Tetris
     partial class Block
     {
         int X = 0, Y = 0;
-        BLOCKDIR Dir = BLOCKDIR.BD_T;
+        BLOCKTYPE CurType = BLOCKTYPE.BT_T;
+        BLOCKDIR CurDir = BLOCKDIR.BD_T;
         string[][] Arr = null;
         //List<List<string>> BlockData = new List<List<string>>();
         TETRISSCREEN Screen = null;
@@ -46,8 +47,8 @@ namespace Tetris
         }
         private BLOCKDIR RotateDir(BLOCKDIR _main)
         {
-            _main++;
-            BLOCKDIR nextDir = _main;
+            
+            BLOCKDIR nextDir = ++_main;
             if (nextDir == BLOCKDIR.BD_MAX)
                 return BLOCKDIR.BD_T;
             return nextDir;
@@ -70,6 +71,12 @@ namespace Tetris
                     break;
                 case ConsoleKey.S:
                     Y += 1;
+                    break;
+                case ConsoleKey.Q:
+                    //왼쪽
+                    break;
+                case ConsoleKey.E:
+                    //오른쪽
                     break;
                 case ConsoleKey.Spacebar:
                     Dir = RotateDir(Dir);
